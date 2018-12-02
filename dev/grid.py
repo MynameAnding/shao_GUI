@@ -65,7 +65,7 @@ class GridFrame(wx.Frame):
         first_row = data_list[0]
         del data_list[0]
         data_list.sort(key= self.tackSecond,reverse=True)
-        #type(numpy.array(data_list)[:,1].argsort())
+        print(type(numpy.array(data_list)[:,1].argsort()))
         data_list.insert(0, first_row)
         print(data_list)
         return data_list
